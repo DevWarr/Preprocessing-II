@@ -222,17 +222,17 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home header {
+.home .header__home {
   padding-bottom: 10px;
   border-bottom: 2px dashed #C0C0C0;
   display: flex;
   flex-flow: column;
 }
-.home header img {
+.home .header__home img {
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 500px) {
-  .home header {
+  .home .header__home {
     width: 90%;
     margin: 0 auto;
   }
@@ -319,4 +319,11 @@ img {
 }
 .home .content-pick .destination .btn:hover {
   background: #117a8b;
+}
+.contact .header__contact img {
+  margin-bottom: 15px;
+}
+.contact .header__contact h2 {
+  text-align: center;
+  font-size: 5rem;
 }
