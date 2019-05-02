@@ -1,1 +1,13 @@
 // Mixins in here
+
+.btn-properties() {
+    background: @button-bg;
+    color: @white;
+    padding: 12px 0;
+    border-radius: 12px;
+    font-size: 1.8rem;
+    text-align: center;
+    &:hover {
+        background: darken(@button-bg, 10%);
+    }
+}

@@ -1,5 +1,16 @@
 .home {
 
+  header {
+    padding-bottom: 10px;
+    border-bottom: 2px dashed @navigation-border;
+    display: flex;
+    flex-flow: column;
+    img {
+      margin-bottom: 20px;
+    }
+
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -54,8 +65,13 @@
     justify-content: space-between;
 
     .destination {
-      width: 30%;
+      // Testing to see each box width:
+      // background: blue;
+      width: 26%;
       margin-bottom: 30px;
+      .btn {
+        .btn-properties();
+      }
     }
   }
 }// home
