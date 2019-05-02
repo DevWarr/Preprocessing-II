@@ -168,42 +168,44 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-nav {
+.nav-bar {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.nav-bar nav {
   box-sizing: content-box;
   max-width: 800px;
   margin: 0 auto;
   padding: 25px 0;
-  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   flex-flow: row no-wrap;
   align-items: center;
   justify-content: space-between;
 }
 @media only screen and (max-width: 500px) {
-  nav {
+  .nav-bar nav {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 15px 0 5px;
   }
 }
-nav a {
+.nav-bar nav a {
   font-size: 1.6rem;
   text-decoration: none;
   color: black;
   flex-grow: 1;
 }
-nav #nav__title {
+.nav-bar nav #nav__title {
   float: left;
   flex-grow: 11;
 }
 @media only screen and (max-width: 500px) {
-  nav #nav__title {
+  .nav-bar nav #nav__title {
     text-align: center;
     width: 100%;
     flex-grow: 1;
     margin-bottom: 15px;
   }
-  nav #nav__title h1 {
+  .nav-bar nav #nav__title h1 {
     font-size: 3.5rem;
   }
 }
