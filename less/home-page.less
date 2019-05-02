@@ -49,7 +49,10 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-      order: -1;
+      order: 10;
+      @media @mobile {
+        order: -1; 
+      }
     }
 
     .img-content {
@@ -89,7 +92,7 @@
       }
 
       .btn {
-        .btn-properties();
+        .btn-properties(@button-bg);
       }
     }
   }

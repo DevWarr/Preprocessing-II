@@ -192,7 +192,7 @@ img {
   text-align: center;
   font-size: 1.6rem;
   text-decoration: none;
-  color: black;
+  color: #212529;
   flex-grow: 1;
 }
 .nav-bar nav #nav__title {
@@ -273,7 +273,12 @@ img {
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
-  order: -1;
+  order: 10;
+}
+@media only screen and (max-width: 500px) {
+  .home .inverse-content .text-content {
+    order: -1;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
@@ -349,7 +354,7 @@ img {
   resize: vertical;
 }
 .contact .form input[type=submit] {
-  background: #17A2B8;
+  background: #212529;
   color: #FFFFFF;
   padding: 12px 0;
   border-radius: 12px;
@@ -359,7 +364,7 @@ img {
   border: none;
 }
 .contact .form input[type=submit]:hover {
-  background: #117a8b;
+  background: #0a0c0d;
 }
 .contact .form label {
   font-size: 2rem;
