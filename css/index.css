@@ -175,8 +175,16 @@ nav {
   padding: 25px 0;
   border-bottom: 2px dashed #C0C0C0;
   display: flex;
+  flex-flow: row no-wrap;
   align-items: center;
   justify-content: space-between;
+}
+@media only screen and (max-width: 500px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 15px 0 5px;
+  }
 }
 nav a {
   font-size: 1.6rem;
@@ -187,6 +195,17 @@ nav a {
 nav #nav__title {
   float: left;
   flex-grow: 11;
+}
+@media only screen and (max-width: 500px) {
+  nav #nav__title {
+    text-align: center;
+    width: 100%;
+    flex-grow: 1;
+    margin-bottom: 15px;
+  }
+  nav #nav__title h1 {
+    font-size: 3.5rem;
+  }
 }
 .footer {
   width: 100%;
@@ -208,6 +227,12 @@ nav #nav__title {
 .home header img {
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 500px) {
+  .home header {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -218,9 +243,21 @@ nav #nav__title {
   width: 48%;
   padding-right: 1%;
 }
+@media only screen and (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media only screen and (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -232,6 +269,7 @@ nav #nav__title {
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+  order: -1;
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
@@ -250,9 +288,22 @@ nav #nav__title {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 500px) {
+  .home .content-pick {
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    padding-top: 10px;
+  }
+}
 .home .content-pick .destination {
   width: 26%;
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 70%;
+    margin: 20px auto;
+  }
 }
 .home .content-pick .destination .btn {
   background: #17A2B8;

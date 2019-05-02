@@ -8,7 +8,9 @@
     img {
       margin-bottom: 20px;
     }
-
+    @media @mobile {
+      .width-mobile-content();
+    }
   }
 
   .content-section {
@@ -22,11 +24,17 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        .width-mobile-content();
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        .width-mobile-content();
+      }
 
       img {
         border-radius: 10px;
@@ -41,6 +49,7 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      order: -1;
     }
 
     .img-content {
@@ -63,12 +72,22 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-wrap: wrap;
+      align-content: space-evenly;
+      padding-top: 10px;
+    }
 
     .destination {
       // Testing to see each box width:
       // background: blue;
       width: 26%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        .width-mobile-destination;
+      }
+
       .btn {
         .btn-properties();
       }
