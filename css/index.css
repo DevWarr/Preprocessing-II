@@ -185,10 +185,11 @@ img {
   .nav-bar nav {
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 15px 0 5px;
+    padding: 15px 10px 5px;
   }
 }
 .nav-bar nav a {
+  text-align: center;
   font-size: 1.6rem;
   text-decoration: none;
   color: black;
@@ -196,6 +197,7 @@ img {
 }
 .nav-bar nav #nav__title {
   float: left;
+  text-align: left;
   flex-grow: 11;
 }
 @media only screen and (max-width: 500px) {
