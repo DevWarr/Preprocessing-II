@@ -1,1 +1,25 @@
 // Navigation Styles here
+
+
+nav {
+    box-sizing: content-box;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px 0;
+    border-bottom: 2px dashed @navigation-border;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+        // Just for testing the size of the anchors
+        // background: black;
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: black;
+        flex-grow: 1;
+    }
+    #nav__title {
+        float: left;
+        flex-grow: 11;
+    }
+}
