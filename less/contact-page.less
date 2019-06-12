@@ -1,0 +1,45 @@
+.contact {
+
+    margin-bottom: 100px;
+
+    .header__contact {
+        img {
+            margin-bottom: 15px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 5rem;
+        }
+    }
+
+    .form {
+        background: @sandy-beach;
+        width: 90%;
+        padding: 20px;
+        margin: 10px auto;
+        display: flex;
+        flex-flow: column no-wrap;
+
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 2px solid @gray;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            .btn-properties(@shark);
+            padding: 10px 25px;
+            border: none;
+        }
+
+        label {
+            font-size: 2rem;
+        }
+    }
+
+
+} // contact
